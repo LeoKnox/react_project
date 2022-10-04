@@ -1,4 +1,4 @@
-function Character(character={name:"red", class:"fire"}) {
+function Character(character={"name":"red", "class":"fire"}) {
     return(
         <>
             <h3>{character.name}:</h3>
