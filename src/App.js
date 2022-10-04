@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import ReactDOM from 'react-dom/client';
+import List from './components/List';
 import './App.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h3>Create some projects</h3>
+        <List />
       </header>
     </div>
   );
