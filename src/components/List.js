@@ -9,9 +9,22 @@ function List() {
     return(
         <>
             <h2>Characters</h2>
+            <table>
+                <tr>
+                    <th>name</th>
+                    <th>description</th>
+                    <th>width</th>
+                    <th>height</th>
+                </tr>
             {data.map((d) => (
-                <p>{d.name}</p>
+                <tr>
+                    <td>{d.name}</td>
+                    <td>{d.description}</td>
+                    <td>{d.width}</td>
+                    <td>{d.height}</td>
+                </tr>
             ))}
+            </table>
         </>
     )
 }
