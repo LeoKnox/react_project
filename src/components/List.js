@@ -1,11 +1,10 @@
-import Character from './Character';
+import data from './data';
 
 function List() {
     return(
         <>
             <h2>Characters</h2>
-            <Character />
-            <Character />
+            <h3>{data[0].name}</h3>
         </>
     )
 }
