@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 
 function List() {
     const data = [
@@ -5,6 +6,7 @@ function List() {
         {name: "second", description: "next", width:6, height:6},
         {name: "third", description: "after that", width:7, height:7}
     ];
+    const [rooms, setRooms] = useState(data);
 
     return(
         <>
@@ -16,12 +18,12 @@ function List() {
                     <th>width</th>
                     <th>height</th>
                 </tr>
-            {data.map((d) => (
+            {rooms.map((room) => (
                 <tr>
-                    <td>{d.name}</td>
-                    <td>{d.description}</td>
-                    <td>{d.width}</td>
-                    <td>{d.height}</td>
+                    <td>{room.name}</td>
+                    <td>{room.description}</td>
+                    <td>{room.width}</td>
+                    <td>{room.height}</td>
                     <td><button>Edit</button></td><td><button>Delete</button></td>
                 </tr>
             ))}
