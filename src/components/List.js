@@ -8,6 +8,10 @@ function List() {
     ];
     const [rooms, setRooms] = useState(data);
 
+    const handleChange = (e) => {
+        setTask(e.target.value);
+    }
+
     return(
         <>
             <h2>Characters</h2>
@@ -28,10 +32,10 @@ function List() {
                 </tr>
             ))}
             <tr>
-                <td><input type="text" /></td>
-                <td><input type="text" /></td>
-                <td><input type="number" /></td>
-                <td><input type="number" /></td>
+                <td><input type="text" onChange={handleChange} /></td>
+                <td><input type="text" onChange={handleChange} /></td>
+                <td><input type="number" onChange={handleChange} /></td>
+                <td><input type="number" onChange={handleChange} /></td>
                 <td><button>Create</button></td>
             </tr>
             </table>
