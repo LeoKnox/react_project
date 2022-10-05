@@ -29,6 +29,7 @@ function List() {
                 <td><input type="text" /></td>
                 <td><input type="number" /></td>
                 <td><input type="number" /></td>
+                <td><button>Create</button></td>
             </tr>
             </table>
         </>
