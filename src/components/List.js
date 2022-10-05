@@ -22,6 +22,7 @@ function List() {
                     <td>{d.description}</td>
                     <td>{d.width}</td>
                     <td>{d.height}</td>
+                    <td><button>Edit</button></td><td><button>Delete</button></td>
                 </tr>
             ))}
             <tr>
