@@ -27,6 +27,10 @@ function List() {
     const handleHeight = (e) => {
         setHeight(e.target.value);
     }
+    
+    const createRoom = (e) => {
+        setRooms([...rooms, {name:{name}, description:{description}, width:{width}, height:{height}}])
+    }
 
     return(
         <>
@@ -52,7 +56,7 @@ function List() {
                 <td><input type="text" value={description} onChange={handleDescription} /></td>
                 <td><input type="number" value={width} onChange={handleWidth} /></td>
                 <td><input type="number" value={height} onChange={handleHeight} /></td>
-                <td><button>Create</button></td>
+                <td><button onClick={createRoom}>Create</button></td>
             </tr>
             </table>
         </>
