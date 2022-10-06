@@ -7,7 +7,7 @@ function List() {
         {name: "third", description: "after that", width:7, height:7}
     ];
     const [rooms, setRooms] = useState(data);
-    const [room, setRoom] = useState('');
+    const [room, setRoom] = useState([]);
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [width, setWidth] = useState('');
