@@ -7,6 +7,7 @@ function List() {
         {name: "third", description: "after that", width:7, height:7}
     ];
     const [rooms, setRooms] = useState(data);
+    const [room, setRoom] = useState({});
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [width, setWidth] = useState('');
@@ -29,7 +30,7 @@ function List() {
     }
     
     const createRoom = (e) => {
-        rooms.map({name:{name}, description:{description}, width:{width}, height:{height}})
+        setRooms(...rooms, [{name:{name}, description:{description}, width:{width}, height:{height}}]);
     }
 
     return(
