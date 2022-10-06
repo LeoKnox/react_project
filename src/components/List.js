@@ -7,9 +7,25 @@ function List() {
         {name: "third", description: "after that", width:7, height:7}
     ];
     const [rooms, setRooms] = useState(data);
+    const [name, setName] = useState('');
+    const [description, setDescription] = useState('');
+    const [width, setWidth] = useState('');
+    const [height, setHeight] = useState('');
 
-    const handleChange = (e) => {
-        setTask(e.target.value);
+    const handleName = (e) => {
+        setName(e.target.value);
+    }
+
+    const handleDescription = (e) => {
+        setDescription(e.target.value);
+    }
+
+    const handleWidth = (e) => {
+        setWidth(e.target.value);
+    }
+
+    const handleHeight = (e) => {
+        setHeight(e.target.value);
     }
 
     return(
@@ -32,10 +48,10 @@ function List() {
                 </tr>
             ))}
             <tr>
-                <td><input type="text" onChange={handleChange} /></td>
-                <td><input type="text" onChange={handleChange} /></td>
-                <td><input type="number" onChange={handleChange} /></td>
-                <td><input type="number" onChange={handleChange} /></td>
+                <td><input type="text" value={name} onChange={handleName} /></td>
+                <td><input type="text" value={description} onChange={handleDescription} /></td>
+                <td><input type="number" value={width} onChange={handleWidth} /></td>
+                <td><input type="number" value={height} onChange={handleHeight} /></td>
                 <td><button>Create</button></td>
             </tr>
             </table>
