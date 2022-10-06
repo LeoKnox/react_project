@@ -29,7 +29,7 @@ function List() {
     }
     
     const createRoom = (e) => {
-        setRooms([...rooms, ({name:{name}, description:{description}, width:{width}, height:{height}})])
+        rooms.map({name:{name}, description:{description}, width:{width}, height:{height}})
     }
 
     return(
