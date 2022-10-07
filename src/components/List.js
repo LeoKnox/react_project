@@ -30,9 +30,9 @@ function List() {
     }
     
     const createRoom = (e) => {
-        setRoom({name}, {description}, {width}, {height});
-        console.log("****"+JSON.stringify(room));
-        setRooms(rooms => [...rooms, room]);
+        data.push({name:{name}, description:{description}, width:{width}, height:{height}});
+        console.log("****"+JSON.stringify(data));
+        setRooms(data);
     }
 
     return(
