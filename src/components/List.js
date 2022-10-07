@@ -33,6 +33,7 @@ function List() {
         data.push({name:{name}, description:{description}, width:{width}, height:{height}});
         console.log("****"+JSON.stringify(data));
         setRooms(data);
+        console.log("!!!!!"+JSON.stringify(rooms));
     }
 
     return(
