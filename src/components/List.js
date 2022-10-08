@@ -29,8 +29,9 @@ function List() {
         setHeight(e.target.value);
     }
 
-    const deleteRoom = (deleteIndex, e) => {
+    function deleteRoom(deleteIndex, e) {
         console.log(deleteIndex)
+        e.preventDefault();
     }
     
     const createRoom = (e) => {
