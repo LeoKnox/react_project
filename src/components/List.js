@@ -31,7 +31,6 @@ function List() {
 
     const deleteRoom = (deleteIndex, e) => {
         console.log(deleteIndex)
-        e.preventDefault();
     }
     
     const createRoom = (e) => {
@@ -59,7 +58,7 @@ function List() {
                     <td>{room.description}</td>
                     <td>{room.width}</td>
                     <td>{room.height}</td>
-                    <td><button>Edit</button></td><td><button onClick={deleteRoom}>Delete</button></td>
+                    <td><button>Edit</button></td><td><button onClick={deleteRoom("red")}>Delete</button></td>
                 </tr>
             ))}
             <tr>
