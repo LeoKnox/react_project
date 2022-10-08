@@ -28,6 +28,10 @@ function List() {
     const handleHeight = (e) => {
         setHeight(e.target.value);
     }
+
+    const deleteRoom = (deleteIndex) => {
+        console.log(deleteIndex)
+    }
     
     const createRoom = (e) => {
         //data = rooms;
@@ -48,13 +52,13 @@ function List() {
                     <th>width</th>
                     <th>height</th>
                 </tr>
-            {rooms.map((room) => (
+            {rooms.map((room, index) => (
                 <tr>
                     <td>{room.name}</td>
                     <td>{room.description}</td>
                     <td>{room.width}</td>
                     <td>{room.height}</td>
-                    <td><button>Edit</button></td><td><button>Delete</button></td>
+                    <td><button>Edit</button></td><td><button onClick={deleteRoom(index)}>Delete</button></td>
                 </tr>
             ))}
             <tr>
