@@ -29,8 +29,9 @@ function List() {
         setHeight(e.target.value);
     }
 
-    const deleteRoom = (deleteIndex) => {
+    const deleteRoom = (deleteIndex, e) => {
         console.log(deleteIndex)
+        console.log("***"+e);
     }
     
     const createRoom = (e) => {
@@ -58,7 +59,7 @@ function List() {
                     <td>{room.description}</td>
                     <td>{room.width}</td>
                     <td>{room.height}</td>
-                    <td><button>Edit</button></td><td><button onClick={deleteRoom(index)}>Delete</button></td>
+                    <td><button>Edit</button></td><td><button onClick={deleteRoom}>Delete</button></td>
                 </tr>
             ))}
             <tr>
