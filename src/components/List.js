@@ -29,7 +29,7 @@ function List() {
         setHeight(e.target.value);
     }
 
-    const deleteRoom = (deleteIndex) => (e) => {
+    const deleteRoom = (deleteIndex, e) => {
         console.log(deleteIndex)
         e.preventDefault();
     }
