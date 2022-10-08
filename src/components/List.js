@@ -29,9 +29,9 @@ function List() {
         setHeight(e.target.value);
     }
 
-    const deleteRoom = (deleteIndex, e) => {
+    const deleteRoom = (deleteIndex) => (e) => {
         console.log(deleteIndex)
-        console.log("***"+e);
+        e.preventDefault();
     }
     
     const createRoom = (e) => {
@@ -67,7 +67,7 @@ function List() {
                 <td><input type="text" value={description} onChange={handleDescription} /></td>
                 <td><input type="number" value={width} onChange={handleWidth} /></td>
                 <td><input type="number" value={height} onChange={handleHeight} /></td>
-                <td><button onClick={createRoom}>Create</button></td>
+                <td><button onClick={createRoom("index")}>Create</button></td>
             </tr>
             </table>
         </>
