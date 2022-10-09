@@ -30,7 +30,7 @@ function List() {
     }
 
     function deleteRoom(deleteIndex, e) {
-        console.log(deleteIndex)
+        console.log("&&&&"+deleteIndex)
         e.preventDefault();
     }
     
@@ -40,7 +40,6 @@ function List() {
         //console.log("****"+JSON.stringify(data));
         //setRooms(data);
         setRooms([...rooms, (name, description, width, height)]);
-        console.log("!!!!!"+JSON.stringify(rooms));
     }
 
     return(
@@ -59,7 +58,7 @@ function List() {
                     <td>{room.description}</td>
                     <td>{room.width}</td>
                     <td>{room.height}</td>
-                    <td><button>Edit</button></td><td><button onClick={deleteRoom("red")}>Delete</button></td>
+                    <td><button>Edit</button></td><td><button onClick={() => deleteRoom("red")}>Delete</button></td>
                 </tr>
             ))}
             <tr>
