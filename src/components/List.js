@@ -30,7 +30,8 @@ function List() {
     }
 
     function deleteRoom(deleteIndex) {
-        console.log("&&&&"+deleteIndex)
+        let deletedArray = rooms.filter(roomName => roomName !== deleteIndex);
+        console.log("&&&&"+JSON.stringify(deletedArray));
     }
     
     const createRoom = (e) => {
