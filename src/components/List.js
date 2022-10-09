@@ -57,7 +57,7 @@ function List() {
                     <td>{room.description}</td>
                     <td>{room.width}</td>
                     <td>{room.height}</td>
-                    <td><button>Edit</button></td><td><button onClick={() => deleteRoom("red")}>Delete</button></td>
+                    <td><button>Edit</button></td><td><button onClick={() => deleteRoom(room.name)}>Delete</button></td>
                 </tr>
             ))}
             <tr>
