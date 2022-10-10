@@ -35,7 +35,7 @@ function List() {
         console.log("&&&&"+JSON.stringify(deletedArray));
     }
     
-    const createRoom = (e) => {
+    function createRoom() {
         let newRoom = rooms;
         newRoom.push({name, description, width, height});
         console.log("****"+JSON.stringify(newRoom));
