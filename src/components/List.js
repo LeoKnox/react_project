@@ -47,7 +47,7 @@ function List() {
     return(
         <>
             <h2>Characters</h2>
-            <table>
+            <tbody>
                 <tr>
                     <th>name</th>
                     <th>description</th>
@@ -70,7 +70,7 @@ function List() {
                 <td><input type="number" value={height} onChange={handleHeight} /></td>
                 <td><button onClick={() => createRoom()}>Create</button></td>
             </tr>
-            </table>
+            </tbody>
         </>
     )
 }
