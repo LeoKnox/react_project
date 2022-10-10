@@ -42,6 +42,10 @@ function List() {
         //setRooms([...rooms, (name, description, width, height)]);
     }
 
+    function updateRoom(roomIndex) {
+        console.log("---"+roomIndex);
+    }
+
     function deleteRoom(deleteIndex) {
         let deletedArray = rooms.filter(room => room.name !== deleteIndex);
         setRooms(deletedArray);
@@ -64,7 +68,7 @@ function List() {
                     <td>{room.description}</td>
                     <td>{room.width}</td>
                     <td>{room.height}</td>
-                    <td><button>Edit</button></td><td><button onClick={() => deleteRoom(room.name)}>Delete</button></td>
+                    <td><button onClick={() => updateRoom(room.name)}>Edit</button></td><td><button onClick={() => deleteRoom(room.name)}>Delete</button></td>
                 </tr>
             ))}
             <tr>
