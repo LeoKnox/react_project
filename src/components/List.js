@@ -40,6 +40,7 @@ function List() {
         newRoom.push({name, description, width, height});
         console.log("****"+JSON.stringify(newRoom));
         setRooms(newRoom);
+        console.log("!!!!"+JSON.stringify(rooms));
         //setRooms([...rooms, (name, description, width, height)]);
     }
 
