@@ -13,6 +13,10 @@ function List() {
     const [width, setWidth] = useState('');
     const [height, setHeight] = useState('');
 
+    useEffect(() => {
+        console.log(rooms);
+    }, [rooms]);
+
     const handleName = (e) => {
         setName(e.target.value);
     }
