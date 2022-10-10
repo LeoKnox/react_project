@@ -55,7 +55,7 @@ function List() {
                     <th>height</th>
                 </tr>
             {rooms.map((room, index) => (
-                <tr>
+                <tr key={index}>
                     <td>{room.name}</td>
                     <td>{room.description}</td>
                     <td>{room.width}</td>
