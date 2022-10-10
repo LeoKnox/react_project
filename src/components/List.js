@@ -14,7 +14,7 @@ function List() {
     const [height, setHeight] = useState('');
 
     useEffect(() => {
-        console.log(rooms);
+        console.log("))))"+ JSON.stringify(rooms));
     }, [rooms]);
 
     const handleName = (e) => {
@@ -32,12 +32,6 @@ function List() {
     const handleHeight = (e) => {
         setHeight(e.target.value);
     }
-
-    function deleteRoom(deleteIndex) {
-        let deletedArray = rooms.filter(room => room.name !== deleteIndex);
-        setRooms(deletedArray);
-        console.log("&&&&"+JSON.stringify(deletedArray));
-    }
     
     function createRoom() {
         let newRoom = rooms;
@@ -46,6 +40,12 @@ function List() {
         setRooms(newRoom);
         console.log("!!!!"+JSON.stringify(rooms));
         //setRooms([...rooms, (name, description, width, height)]);
+    }
+
+    function deleteRoom(deleteIndex) {
+        let deletedArray = rooms.filter(room => room.name !== deleteIndex);
+        setRooms(deletedArray);
+        console.log("&&&&"+JSON.stringify(deletedArray));
     }
 
     return(
