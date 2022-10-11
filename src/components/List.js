@@ -41,8 +41,8 @@ function List() {
         //setRooms([...rooms, (name, description, width, height)]);
     }
 
-    function setGrade(newGrade) {
-        console.log(newGrade);
+    function setGrade(e) {
+        console.log(e.target.value);
     }
 
     function updateRoom(roomIndex) {
@@ -58,8 +58,8 @@ function List() {
     return(
         <>
             <h2>Characters</h2>
-            <input type="checkbox" value="1" onClick={() => setGrade("1")}/><label>1</label>
-            <input type="checkbox" value="2" /><label>2</label>
+            <input type="checkbox" value="1" onClick={() => setGrade()} /><label>1</label>
+            <input type="checkbox" value="2" onClick={() => setGrade()} /><label>2</label>
             <tbody>
                 <tr>
                     <th>name</th>
