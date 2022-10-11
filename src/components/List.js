@@ -42,7 +42,7 @@ function List() {
     }
 
     function setGrade(e) {
-        if (e.target.value) {
+        if (e.target.checked) {
             console.log("true");
         } else {
             console.log("false");
