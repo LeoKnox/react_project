@@ -42,7 +42,11 @@ function List() {
     }
 
     function setGrade(e) {
-        console.log(e.target.value);
+        if (e.target.value) {
+            console.log("true");
+        } else {
+            console.log("false");
+        }
     }
 
     function updateRoom(roomIndex) {
