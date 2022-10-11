@@ -54,6 +54,8 @@ function List() {
     return(
         <>
             <h2>Characters</h2>
+            <input type="checkbox" value="1" /><label>1</label>
+            <input type="checkbox" value="2" /><label>2</label>
             <tbody>
                 <tr>
                     <th>name</th>
