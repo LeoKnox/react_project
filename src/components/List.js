@@ -64,8 +64,9 @@ function List() {
         <>
             <h2>Characters</h2>
             <fieldset>
-                <input type="checkbox" value="1" onClick={setGrade} /><label>1</label>&#9737;
-                <input type="checkbox" value="2" onClick={setGrade} /><label>2</label>
+                <large><input type="checkbox" value="1" onClick={setGrade} /></large><label>1</label>
+                <small>&#9737;</small>
+                <large><input type="checkbox" value="2" onClick={setGrade} /></large><label>2</label>
             </fieldset>
             <tbody>
                 <tr>
