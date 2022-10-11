@@ -63,11 +63,11 @@ function List() {
     return(
         <>
             <h2>Characters</h2>
-            <fieldset>
+            <div className="rounds">
                 <large><input type="checkbox" value="1" onClick={setGrade} /></large><label>1</label>
                 <small>&#9737;</small>
                 <large><input type="checkbox" value="2" onClick={setGrade} /></large><label>2</label>
-            </fieldset>
+            </div>
             <tbody>
                 <tr>
                     <th>name</th>
