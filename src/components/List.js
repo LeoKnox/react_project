@@ -63,8 +63,10 @@ function List() {
     return(
         <>
             <h2>Characters</h2>
-            <input type="checkbox" value="1" onClick={setGrade} /><label>1</label>
-            <input type="checkbox" value="2" onClick={setGrade} /><label>2</label>
+            <fieldset>
+                <input type="checkbox" value="1" onClick={setGrade} /><label>1</label>
+                <input type="checkbox" value="2" onClick={setGrade} /><label>2</label>
+            </fieldset>
             <tbody>
                 <tr>
                     <th>name</th>
