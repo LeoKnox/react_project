@@ -43,7 +43,8 @@ function List() {
     }
 
     function setGrade(e) {
-        setGrades([...grades[e.target.value], e.target.checked]);
+        let x = e.target.value;
+        setGrades([...grades[x], e.target.checked]);
         console.log(grades);
         console.log(e.target.value);
         if (e.target.checked) {
