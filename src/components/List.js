@@ -47,6 +47,7 @@ function List() {
         let gradeArray = grades;
         gradeArray[e.target.value] = e.target.checked;
         console.log("+++++"+gradeArray);
+        console.log(x);
         if (e.target.checked) {
             console.log("true");
         } else {
