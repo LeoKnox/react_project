@@ -43,16 +43,10 @@ function List() {
     }
 
     function setGrade(e) {
-        let x = e.target.value;
         let gradeArray = grades;
         gradeArray[e.target.value] = e.target.checked;
-        console.log("+++++"+gradeArray);
-        console.log(x);
-        if (e.target.checked) {
-            console.log("true");
-        } else {
-            console.log("false");
-        }
+        setGrades(gradeArray);
+        console.log("+++++"+grades);
     }
 
     function updateRoom(roomIndex) {
