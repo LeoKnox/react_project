@@ -7,6 +7,7 @@ function List() {
         {name: "third", description: "after that", width:7, height:7}
     ];
     const [rooms, setRooms] = useState(data);
+    const [grades, setGrades] = useState([]);
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [width, setWidth] = useState('');
@@ -42,6 +43,8 @@ function List() {
     }
 
     function setGrade(e) {
+        setGrades([...grades[e.target.value], e.target.checked]);
+        console.log(grades);
         console.log(e.target.value);
         if (e.target.checked) {
             console.log("true");
