@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 function Character() {
     const data = [
         {question:"one", answer:"ichi"},
@@ -9,11 +11,13 @@ function Character() {
         {question:"seven", answer:"shichi"},
         {question:"eight", answer:"hachi"},
     ]
+    const [numbers, setNumbers] = useState([Math.random()*3,Math.random()*3])
 
     return(
         <>
-            <h3>{data.question}:</h3>
-            <p>{data.answer}:</p>
+            <h3>{data[1].question}:</h3>
+            <p>{data[1].answer}:</p>
+            <p>{numbers}</p>
         </>
     )
 }
