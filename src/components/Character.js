@@ -1,8 +1,19 @@
-function Character(character={"name":"red", "class":"fire"}) {
+function Character() {
+    const data = [
+        {question:"one", answer:"ichi"},
+        {question:"two", answer:"ni"},
+        {question:"three", answer:"san"},
+        {question:"four", answer:"yoh"},
+        {question:"five", answer:"go"},
+        {question:"six", answer:"roku"},
+        {question:"seven", answer:"shichi"},
+        {question:"eight", answer:"hachi"},
+    ]
+
     return(
         <>
-            <h3>{character.name}:</h3>
-            <p>{character.class}:</p>
+            <h3>{data.question}:</h3>
+            <p>{data.answer}:</p>
         </>
     )
 }
