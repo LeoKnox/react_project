@@ -15,7 +15,7 @@ function Character() {
 
     function changeNumbers() {
         let x = Array(2).fill().map(() => Math.floor(Math.random()*3));
-        console.log(x);
+        setNumbers(x);
     }
 
     return(
