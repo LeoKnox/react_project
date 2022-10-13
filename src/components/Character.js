@@ -17,7 +17,7 @@ function Character() {
         Math.floor(Math.random()*8),
         Math.floor(Math.random()*8)
     ]);
-    const [ans, setAns] = useState(data[Math.floor(Math.random()*8)]);
+    const [ans, setAns] = useState(data[Math.floor(Math.random()*8)].answer);
 
     function changeNumbers() {
         let x = Array(4).fill().map(() => Math.floor(Math.random()*8));
