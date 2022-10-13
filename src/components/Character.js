@@ -34,8 +34,8 @@ function Character() {
         <>
             {numbers.map((number,q) => (
                 <>
-                <p onClick={() => changeNumbers(q)}>{data[number].question}
-                :{data[number].answer}</p>
+                <p onClick={() => changeNumbers(data[number].question)}>{data[number].question}
+                :{data[number].answer}-{q}</p>
                 </>
             ))}
             <h3>Answer: {ans}</h3>
