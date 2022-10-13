@@ -11,7 +11,7 @@ function Character() {
         {question:"seven", answer:"shichi"},
         {question:"eight", answer:"hachi"},
     ]
-    const [numbers, setNumbers] = useState([Math.random()*3,Math.random()*3])
+    const [numbers, setNumbers] = useState([Math.ceil(Math.random()*3),Math.random()*3])
 
     return(
         <>
