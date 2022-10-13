@@ -19,7 +19,12 @@ function Character() {
     ]);
     const [ans, setAns] = useState(data[Math.floor(Math.random()*8)].answer);
 
-    function changeNumbers() {
+    function changeNumbers(q) {
+        if (q === ans) {
+            console.log("correct");
+        } else {
+            console.log("wrong");
+        }
         let x = Array(4).fill().map(() => Math.floor(Math.random()*8));
         setNumbers(x);
         setAns(data[x[Math.floor(Math.random()*8)]].answer);
@@ -27,9 +32,9 @@ function Character() {
 
     return(
         <>
-            {numbers.map((number) => (
+            {numbers.map((number,q) => (
                 <>
-                <p>{data[number].question}
+                <p onClick={changeNumbers(q)}>{data[number].question}
                 :{data[number].answer}</p>
                 </>
             ))}
