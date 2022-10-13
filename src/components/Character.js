@@ -22,7 +22,7 @@ function Character() {
     function changeNumbers() {
         let x = Array(4).fill().map(() => Math.floor(Math.random()*8));
         setNumbers(x);
-        setAns(x[Math.floor(Math.random()*8)]);
+        setAns(data[x[Math.floor(Math.random()*8)]].answer);
     }
 
     return(
