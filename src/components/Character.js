@@ -27,7 +27,7 @@ function Character() {
         }
         let x = Array(4).fill().map(() => Math.floor(Math.random()*8));
         setNumbers(x);
-        setAns(data[x[Math.floor(Math.random()*8)]].answer);
+        setAns(data[x[Math.floor(Math.random()*4)]].answer);
     }
 
     return(
