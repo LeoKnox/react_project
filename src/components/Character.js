@@ -11,13 +11,13 @@ function Character() {
         {question:"seven", answer:"shichi"},
         {question:"eight", answer:"hachi"},
     ]
-    const [numbers, setNumbers] = useState([Math.ceil(Math.random()*3),Math.random()*3])
+    const [numbers, setNumbers] = useState([Math.floor(Math.random()*3),Math.floor(Math.random()*3)])
 
     return(
         <>
             <h3>{data[1].question}:</h3>
             <p>{data[1].answer}:</p>
-            <p>{numbers}</p>
+            <p>{numbers[0]}:{numbers[1]}</p>
         </>
     )
 }
