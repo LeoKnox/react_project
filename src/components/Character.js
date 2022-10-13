@@ -20,9 +20,12 @@ function Character() {
 
     return(
         <>
-            <h3>{data[1].question}:</h3>
-            <p>{data[1].answer}:</p>
-            <p>{numbers[0]}:{numbers[1]}</p>
+            {numbers.map((number) => (
+                <>
+                <p>{data[number].question}
+                :{data[number].answer}</p>
+                </>
+            ))}
             <button onClick={changeNumbers}>change</button>
         </>
     )
