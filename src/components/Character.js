@@ -11,10 +11,15 @@ function Character() {
         {question:"seven", answer:"shichi"},
         {question:"eight", answer:"hachi"},
     ]
-    const [numbers, setNumbers] = useState([Math.floor(Math.random()*3),Math.floor(Math.random()*3)]);
+    const [numbers, setNumbers] = useState([
+        Math.floor(Math.random()*8),
+        Math.floor(Math.random()*8),
+        Math.floor(Math.random()*8),
+        Math.floor(Math.random()*8)
+    ]);
 
     function changeNumbers() {
-        let x = Array(2).fill().map(() => Math.floor(Math.random()*3));
+        let x = Array(4).fill().map(() => Math.floor(Math.random()*8));
         setNumbers(x);
     }
 
