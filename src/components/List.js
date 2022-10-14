@@ -47,8 +47,8 @@ function List() {
         gradeArray[e.target.value] = e.target.checked;
         setGrades(gradeArray);
         let x = "http://localhost";
-        for (let i = 0; i < grades; i++) {
-            console.log(setGrades[i]);
+        for (let i = 0; i < setGrades; i++) {
+            console.log("xxxx"+setGrades[i]);
         }
         console.log(x);
     }
