@@ -48,7 +48,7 @@ function List() {
         setGrades(gradeArray);
         let x = "http://localhost";
         for (let i = 0; i < grades; i++) {
-            x += "&";
+            console.log(setGrades[i]);
         }
         console.log(x);
     }
