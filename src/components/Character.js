@@ -20,6 +20,7 @@ function Character() {
     const [ans, setAns] = useState(data[Math.floor(Math.random()*8)].answer);
 
     function changeNumbers(q) {
+        console.log(q+"iiii");
         if (q === ans) {
             console.log("correct");
         } else {
